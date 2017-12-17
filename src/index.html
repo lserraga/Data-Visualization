@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The boom of the renewable energies in Europe</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+
+    <h1>The boom of the renewable energies in Europe</h1>
+    <div style="position: absolute; background: lightblue; height: 300px; top: 350px; width:182px; font-size: 22px; padding: 15px; border-radius: 10px; left: 20px;">
+    The consumption of renewable energies in Europe has skyrocketed during the last 2 decades, getting to as much as 50% of the energy consumed in countries like Sweden.</div>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+    <input id="yearSlider" type="range" value="1990" min="1990" max="2014" step="1" oninput="changeYear(value)" />
+
+    <div id="tooltip" class="hidden"></div>
+
+    </div>
+
+
+    <p>Simon Partridge / Luis Serra Garcia<br> Instructor: Suresh Lodha<br> CMPS 165: Data programming for Visualization Fall 2016</p>
+<div class="left">
+    <div class="third">
+        <h2>Files Submitted</h2>
+        <ul>
+            <li>index.html</li>
+            <li>energyConsumption.json</li>
+            <li>package.json</li>
+            <li>processCSV.js</li>
+            <li>eu.geojson</li>
+            <li>energyConsumption.csv</li>
+            <li>Various energy symbols</li>
+        </ul>
+
+    </div>
+
+    <div class="third">
+        <h2>Data Sources</h2>
+        <a href="http://ec.europa.eu/eurostat/web/energy/data/database" target="_blank">Eurostat Energy Database: Energy Data</a><br>
+        <a href="http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/" target="_blank">Natural Earth Data: Shape Files</a>
+        <br>
+        <a href="https://www.iconfinder.com/" target="_blank">Energy Source Icons</a>
+
+
+
+
+    </div>
+
+    <div class="third">
+        <h2>Visualisation Sources</h2>
+
+        <a href="https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/" target="_blank">Css Tricks: Range Slider Styling</a><br>
+        <a href="http://stackoverflow.com/questions/21285385/d3-pie-chart-arc-is-invisible-in-transition-to-180" target="_blank">Stack Overflow: D3 Pie Chart Animation</a><br>
+        <a href="http://colorbrewer2.org/" target="_blank">Color Brewer 2</a>
+
+
+
+
+    </div>
+</div>
+
+
+</body>
+
+</html>

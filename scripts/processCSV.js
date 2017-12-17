@@ -8,7 +8,7 @@ var fs = require('fs')
 var parse = require('csv-parse/lib/sync');
 
 var fileName = 'energyConsumption';
-var csv = fs.readFileSync('./' + fileName + '.csv', 'utf8')
+var csv = fs.readFileSync('../data/' + fileName + '.csv', 'utf8')
 
 
 var records = parse(csv, {columns: true});
@@ -170,7 +170,7 @@ function mapCountryNames(name){
     }
 }
 
-var geoData = fs.readFileSync('./eu.geojson', 'utf8');
+var geoData = fs.readFileSync('../data/eu.geojson', 'utf8');
 
 var geo = JSON.parse(geoData);
 
@@ -196,7 +196,7 @@ geo.features[i] = {
 
 //console.log(geo)
 
-fs.writeFile(fileName + "_out.json", JSON.stringify(geo), function(err) {
+fs.writeFile('../data' + fileName + ".json", JSON.stringify(geo), function(err) {
     if(err) {
         return console.log(err);
     }
