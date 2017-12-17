@@ -128,7 +128,7 @@ var tooltip = d3.select("#tooltip");
 var geo;
 
 //Loading the data
-d3.json("../data/energyConsumption.json", function(error, data) {
+d3.json("./data/energyConsumption.json", function(error, data) {
     if (error) throw error;
 
     geo = data;
@@ -298,11 +298,11 @@ function initialDraw() {
     //Adding images to the bar chart
     legend.append("svg:image")
         .attr("xlink:href", function(d, i) {
-            if (i == 4 || i == 8) {
+            if (i == 4 || i == 8 || i == 11) {
                 aux++;
                 return "";
             }
-            return `../assets/${legendImages[i - aux]}`
+            return `./assets/${legendImages[i - aux]}`
         })
         .attr('width', rectSize)
         .attr('height', rectSize);
@@ -317,7 +317,7 @@ function initialDraw() {
 
     //Creating arrow for map key
     var arrowL = svg.append("svg:image")
-        .attr("xlink:href", "arrow.png")
+        .attr("xlink:href", "./assets/arrow.png")
         .attr("width", 20)
         .attr("height", 15)
         .attr("transform", "rotate(180)")
